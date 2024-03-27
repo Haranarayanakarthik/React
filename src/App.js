@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import "./Abhi.jpg";
+
+function MyComponent({name,number})
+{
+  return <div>{name}{number}</div>;
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div>Hello Welcome to react
+     <MyComponent name ={"Kommaraju"}/> 
+     <MyComponent name = {"Hara Narayana"}/> 
+  <MyComponent name={"Karthik"}/><MyComponent name = {"Sharma"}/>
+  <MyComponent number={"Your ROll Number is : AP22110010405"}/>
+  Today is an ousum day.</div>;
 }
 
 export default App;
